@@ -1,0 +1,10 @@
+{
+  "name": "educ-life",
+  "version": "1.0.0",
+  "description": "A paltform for Schools!",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js"
+  }
+}

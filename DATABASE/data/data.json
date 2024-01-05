@@ -1,0 +1,19 @@
+{
+    "Exercies": [
+        {
+            "name": "Atividade de Artes",
+            "prof": "Simaria",
+            "date": "01/01/2024"
+        },
+        {
+            "name": "Atividade de Historia",
+            "prof": "Wanderlania",
+            "date": "02/01/2024"
+        },
+        {
+            "name": "Atividade de Português",
+            "prof": "laudivania",
+            "date": "03/01/2024"
+        }
+    ]
+}

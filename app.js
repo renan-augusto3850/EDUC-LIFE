@@ -6,7 +6,7 @@ import databasePostgres from "./databasePostgree.js";
 
 const database = new databasePostgres();
 
-const hostname = '127.0.0.1'
+const hostname = '0.0.0.0'
 const port = 800;
 const server = http.createServer( async (req, res) => {
     const pagepath = url.parse(req.url).pathname;
@@ -98,6 +98,6 @@ const server = http.createServer( async (req, res) => {
 
     
 
-server.listen(process.env.PORT || port, hostname, () => {
+server.listen(process.env.PORT ?? port, hostname, () => {
     console.log("Server rodando na porta ", port);
 });

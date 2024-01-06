@@ -9,7 +9,7 @@ const hostname = '0.0.0.0'
 const port = 800;
 const server = http.createServer( async (req, res) => {
     const pagepath = url.parse(req.url).pathname;
-    if( req.method = "POST" && pathname.startsWith("/POSTEXERCISES")){
+    if( req.method = "POST" && pagepath.startsWith("/POSTEXERCISES")){
         console.log(pathname);
         res.statusCode(200);
         //recebe os resultados dentro da variavel atividades

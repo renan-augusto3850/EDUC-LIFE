@@ -18,8 +18,8 @@ const server = http.createServer( async (req, res) => {
         console.log(pagepath);
         res.statusCode = 200;
         let data = await database.listAll();
-        res.setHeader("Content-Type", "text/json");
-        res.end(data);
+        res.setHeader("Content-Type", "application/json");
+        res.end(JSON.stringify(data));
                 
     }else if (pagepath.startsWith("/JS")) {
         fs.readFile("PUBLIC/PAGES" + pagepath, (err, data) => {

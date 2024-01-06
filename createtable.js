@@ -1,4 +1,4 @@
-import {sql}  from './db.js';
+import sql  from './db.js';
 
 /* sql`DROP TABLE IF EXISTS minha_tabela `.then(() => {
   console.lof("tabela apagada!");

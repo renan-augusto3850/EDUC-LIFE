@@ -1,8 +1,7 @@
-import http from "http";
-import url
- from "url"
-import fs from "fs";
-import databasePostgres from "./databasePostgree.js";
+import {http} from "http";
+import {url} from "url"
+import {fs} from "fs";
+import {databasePostgres} from "./databasePostgree.js";
 
 const database = new databasePostgres();
 

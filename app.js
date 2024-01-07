@@ -10,10 +10,16 @@ const port = 800;
 const server = http.createServer( async (req, res) => {
     const pagepath = url.parse(req.url).pathname;
     if( req.method = "POST" && pagepath.startsWith("/POSTEXERCISES")){
-        console.log(pathname);
-        res.statusCode(200);
-        //recebe os resultados dentro da variavel atividades
-        database.createExercies(atividade);
+        let atividade = '';
+        req.on('data', chunk => {
+            atividade += chunk.toString();
+        });
+        req.on('end', async () => {
+            console.log(pathname);
+            res.statusCode(200);
+            await database.createExercies(atividade);
+        });
+        
     } else if (pagepath.startsWith("/GETEXERCISES")) {
         console.log(pagepath);
         res.statusCode = 200;

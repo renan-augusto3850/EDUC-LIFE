@@ -19,4 +19,4 @@ function fetchData() {
     .then(data => console.log(data))
     .catch(error => console.error(error));
 }
-document.getElementById(send).addEventListener('click', fetchData)
+document.getElementById("send").addEventListener('click', fetchData)

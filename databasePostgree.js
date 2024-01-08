@@ -7,7 +7,7 @@ export class databasePostgres {
         return results;
     }
     async createExercies(atividade){
-        const id = Math.floor(Math.random() * (1001 - 500 + 1)) + 500;
+        const id = randomUUID();
         console.log(id);
         const {name, prof, content, date} = atividade;
         console.log("data: ", name, prof, content, date);

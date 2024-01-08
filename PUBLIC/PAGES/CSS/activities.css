@@ -1,3 +1,9 @@
+body{
+    overflow-x: clip;
+}
+.exercieDiv{
+    display: none;
+}
 .exercicies{
     border: solid 2px gray;
     background-image: url("/IMAGES/doodle.png");
@@ -16,4 +22,33 @@ button{
     border: transparent;
     border-radius: 20px;
     margin-bottom: 10px;
+}
+.header{
+    display: inline-grid;
+}
+.visualizer{
+    position: sticky;
+    background: white;
+    color: black;
+    font-family: verdana;
+    font-size: large;
+    border-radius: 50px;
+    margin: 5% auto;
+    width: 100%;
+    padding: 10px;
+    padding-top: 40px;
+    z-index: 0;
+}
+.littlePicture{
+    position: absolute;
+    transform: translateY(150%);
+    left: 25px;
+}
+#name{
+    font-size: 30px;
+}
+.nameProf{
+    position: absolute;
+    transform: translateY(470%);
+    left: 85px;
 }

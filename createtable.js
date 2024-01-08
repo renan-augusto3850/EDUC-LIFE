@@ -1,11 +1,11 @@
 import sql  from './db.js';
 
-/* sql`DROP TABLE IF EXISTS minha_tabela `.then(() => {
-  console.lof("tabela apagada!");
-}) */
+/*sql`DROP TABLE IF EXISTS atividades `.then(() => {
+  console.log("tabela apagada!");
+})*/
 
 sql`CREATE TABLE atividades (
-    id INTEGER PRIMARY KEY,
+    id TEXT PRIMARY KEY,
     name TEXT,
     prof TEXT,
     content TEXT,

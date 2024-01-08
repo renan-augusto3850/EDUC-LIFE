@@ -3,17 +3,13 @@ function fetchData() {
     var prof = document.getElementById("prof").value;
     var content = document.getElementById("content").value;
     var date = new Date().toLocaleDateString();
+    var data = {name: title, prof: prof, content: content, date: date};
     fetch('/POSTEXERCISES', {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json'
     },
-    body: JSON.stringify({
-        name: title,
-        prof: prof,
-        content: content,
-        date: date
-    })
+    body: JSON.stringify(data)
     })
     .then(response => response.json())
     .then(data => console.log(data))

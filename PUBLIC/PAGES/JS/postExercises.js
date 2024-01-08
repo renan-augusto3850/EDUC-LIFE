@@ -1,7 +1,7 @@
 function fetchData() {
-    var title = document.getElementById("title");
-    var prof = document.getElementById("prof");
-    var content = document.getElementById("content");
+    var title = document.getElementById("title").value;
+    var prof = document.getElementById("prof").value;
+    var content = document.getElementById("content").value;
     var date = new Date().toLocaleDateString();
     fetch('/POSTEXERCISES', {
     method: 'POST',

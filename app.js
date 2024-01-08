@@ -16,7 +16,7 @@ const server = http.createServer( async (req, res) => {
         });
         req.on('end', async () => {
             console.log(pagepath);
-            res.statusCode(200);
+            res.statusCode= 200;
             await database.createExercies(atividade);
         });
         

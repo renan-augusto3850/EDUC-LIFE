@@ -7,7 +7,7 @@ fetch("/GETEXERCISES")
             console.log(data);
             if(JSON.stringify(data) != '[]'){
                 for(var i = 0; i < data.length; i++){
-                    div +=`<div class="exercicies"><h1>${data[i].name}</h1><h5>Prof.${data[i].prof}</h5><br><h6>${data.date}</h6><br><br><button>Abrir</button></div>`;
+                    div +=`<div class="exercicies"><h1>${data[i].name}</h1><h5>Prof.${data[i].prof}</h5><br><h6>${data[i].date}</h6><br><br><button>Abrir</button></div>`;
                 }
                 main.innerHTML = div.replace('undefined', '');
                 setTimeout(function(){

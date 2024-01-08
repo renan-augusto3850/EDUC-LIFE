@@ -3,7 +3,7 @@ function fetchData() {
     var prof = document.getElementById("prof");
     var content = document.getElementById("content");
     var date = new Date().toLocaleDateString();
-    fetch('/POSTEXERCICISES', {
+    fetch('/POSTEXERCISES', {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json'

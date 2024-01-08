@@ -15,7 +15,7 @@ const server = http.createServer( async (req, res) => {
             atividade += chunk.toString();
         });
         req.on('end', async () => {
-            console.log(pathname);
+            console.log(pagepath);
             res.statusCode(200);
             await database.createExercies(atividade);
         });

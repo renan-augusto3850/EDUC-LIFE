@@ -9,10 +9,10 @@ function fetchData() {
         'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-        title,
-        prof,
-        content,
-        date
+        name: title,
+        prof: prof,
+        content: content,
+        date: date
     })
     })
     .then(response => response.json())

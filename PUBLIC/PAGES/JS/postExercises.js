@@ -14,5 +14,6 @@ function fetchData() {
     .then(response => response.json())
     .then(data => console.log(data))
     .catch(error => console.error(error));
+    window.location.assign("/activities.html");
 }
 document.getElementById("send").addEventListener('click', fetchData)

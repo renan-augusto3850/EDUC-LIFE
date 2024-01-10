@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <head>
     <title>EDUC+LIFE</title>
-    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="CSS/index.css">
 </head>
 <html>
     <body>
         <nav class="navigation">
+            <button class="menu" id="menu"><img src="https://icon-library.com/images/menu-icon-png/menu-icon-png-1.jpg" width="50"></button>
             <img src="IMAGES/logo.png" width="50" height="50" class="sitelogo">
             <h1 class="sitename">EDUC+LIFE</h1>
             <img src="https://static.vecteezy.com/system/resources/previews/000/574/512/original/vector-sign-of-user-icon.jpg" width="60">
         </nav>
+        <div class="menuMain">
+            <button id="back"> < Voltar</button>
+            <br><br>
+            <h2>Opções:</h2>
+            <a href="/">Inicio</a>
+            <br>
+            <a href="/postActivitie.html">Postar Atividade</a>
+        </div>
         <div class="loading" id="loading">
             <img src="https://th.bing.com/th/id/R.e42cb20be6939bc8590dede0a20cc6e0?rik=Z%2be10J5aE%2fbNQA&riu=http%3a%2f%2forig11.deviantart.net%2f03d6%2ff%2f2014%2f122%2f7%2fa%2floading_gif_by_zarzox-d7gwtxy.png&ehk=k6Hd%2bH5rAoGufy5%2fceZac7VuV1WDPSM%2bj9clzC5uzPo%3d&risl=&pid=ImgRaw&r=0" width="200">
             <p>Carregando ...</p>
         </div>
         <h1>BEM VINDO AO EDUC+LIFE</h1>
         <button class="card" onclick="loadingShow(); window.location.assign('/activities.html') "><img src="https://th.bing.com/th/id/OIP.EjIM0uu3aIEdNh8NXWkKpQHaJG?rs=1&pid=ImgDetMain" width="100"><br><p>Atividades</p></button>
-        <button class="card" onclick="loadingShow(); window.location.assign('/contact.html')"><img src="https://th.bing.com/th/id/OIP.B6ZewLvxt1cQfZg50a9EzgHaHa?rs=1&pid=ImgDetMain" width="100" height="120"><p>Mensagens</p></button>
+        <button class="card" onclick="loadingShow(); window.location.assign('/contact.html')"><img src="https://th.bing.com/th/id/OIP.B6ZewLvxt1cQfZg50a9EzgHaHa?rs=1&pid=ImgDetMain" width="100" height="120"><p>Contato</p></button>
+        <button class="card" onclick="loadingShow(); window.location.assign('/postActivitie.html')"><img src="https://th.bing.com/th/id/OIP.TVKMrNhuTFXVAKFMqTKuqAHaHa?rs=1&pid=ImgDetMain" width="100" height="120"><p>Publicar Atividade</p></button>
     </body>
 </html>
-<script src="/JS/index.js"></script>
+<script src="JS/index.js"></script>

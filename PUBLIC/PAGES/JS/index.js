@@ -1,8 +1,10 @@
 var loading = document.getElementById("loading");
     function loadingShow() {
-        loading.style.display = 'block'
+        loading.style.display = 'block';
     }
-loading.style.display = 'none'
+setTimeout(function(){
+    loading.style.display = 'none';
+}, 2000);
 document.getElementById("menu").addEventListener('click', function(){
     document.querySelector(".menuMain").style.left = "0";
 });
